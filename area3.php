@@ -8,6 +8,21 @@
 </head>
 
 <body>
+    <?php
+        if (isset($_GET['getArea'])) {
+
+            if($_GET['getArea'] == "สี่เหลี่ยม") {
+                header("Location: ractangle.php");
+                exit;
+            }elseif($_GET['getArea'] == "สามเหลี่ยม") {
+                header("Location: triangle.php");
+                exit;
+            }elseif($_GET['getArea'] == "วงกลม") {
+                header("Location: circle.php");
+                exit;
+            }
+    }
+    ?>
     <form action="" method="get">
         <table border="1" align="center" width="300">
             <tr>
@@ -29,21 +44,6 @@
         </table>
     </form>
 
-    <?php
-        if (isset($_GET['getArea'])) {
-
-            if($_GET['getArea'] == "สี่เหลี่ยม") {
-                header("Location: rectangle.php");
-                exit;
-            }elseif($_GET['getArea'] == "สามเหลี่ยม") {
-                header("Location: triangle.php");
-                exit;
-            }elseif($_GET['getArea'] == "วงกลม") {
-                header("Location: circle.php");
-                exit;
-            }
-    }
-    ?>
 </body>
 
 </html>

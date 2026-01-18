@@ -21,6 +21,7 @@
                 <td colspan="2" align="center">
                     <input type="submit" value="OK">
                     <input type="reset" value="Cancel">
+                    <a href="area3.php">กลับ</a>
                 </td>
             </tr>
         </table>
