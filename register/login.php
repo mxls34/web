@@ -5,7 +5,7 @@ include("connect.php");
 if (isset($_POST['btnLogin'])) {
 
     $userName = $_POST['userName'];
-    $passwords = $_POST['passwords'];
+    $passwords = @$_POST['passwords'];
 
     $sql = "SELECT * FROM login 
             WHERE userName='$userName' 
